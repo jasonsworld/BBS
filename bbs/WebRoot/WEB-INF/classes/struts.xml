@@ -9,8 +9,9 @@
 	<constant name="struts.multipart.paeser" value="cos"></constant>
 	
 	<package name="api" extends="struts-default">
-		<action name="test" class="cn.edu.bupt.action.TestAction" method="execute">
-			<result name="success" >/WEB-INF/hello.jsp</result>
+		<action name="login" class="cn.edu.bupt.action.UserAction" method="login">
+			<result name="success">/bbs/index.jsp</result>
+			<result name="error">/bbs/index.jsp</result>
 		</action>
 	</package>
 </struts>
